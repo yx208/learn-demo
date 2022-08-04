@@ -1,0 +1,26 @@
+<view hidden="{{ isShowSearchPage }}" class="container">
+    <view class="header">
+        <view class="box" bind:tap="onShowSearchPage">
+            <image src="images/search.png" />
+            <text>搜索书籍</text>
+        </view>
+    </view>
+    <view class="sub-container">
+        <image class="head-img" src="images/quality.png" />
+        <view class="books-container">
+            <block wx:for="{{ books }}" wx:key="id">
+                <i-book book="{{ item }}" ></i-book>
+            </block>
+        </view>
+    </view>
+</view>
+
+<i-search 
+    wx:if="{{ isShowSearchPage }}" 
+    bind:cancel="onCancel"
+    bind:search="onSearch"
+    bind:clear="onClear"
+    history-words="{{ historyWords }}"
+    hot-words="{{ hotWords }}"
+    books="{{ searchData }}"
+    is-loading="{{ isLoading }}"></i-search>

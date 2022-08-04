@@ -1,0 +1,40 @@
+
+:root {
+    overflow-y: overlay;
+    --primary-color: #4c91f9;
+    --primary-font-color: #2c3e50;
+    --night-primary-font-color: #b1b8c3;
+    --night-second-font-color: #5a6382;
+    --cate-color: #4f71ef;
+    --tag-color: #F56C6C;
+    --card-bg-color: #fff;
+    --body-bg-color: #f2f2f2;
+    --link-color: #43aa8b;
+    --code-part-color: #f2f2f2;
+    --quote-bg-color: #cce8ff;
+    --quote-block-color: #005bea;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+    background-color: var(--body-bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}

@@ -1,0 +1,61 @@
+@import url('//at.alicdn.com/t/font_2479217_afxrkq36fej.css');
+
+:root {
+    --primary-font-color: #0d181a;
+    --senond-font-color: #999;
+    --primary-pale-color: #CCC;
+    --pale-color: #EEEEEE;
+
+
+    /* 标题 */
+    --primary-title: #2F2F2F;
+    /* 次级标题 */
+    --subtitle: #666666;
+    /* 三级颜色 */
+    --three-level: #A8A8A8;
+    /* 四级标题 */
+    --four-level: #CCCCCC;
+    /* 五级标题 */
+    --five-level: #F4F4F4;
+    /* 主题色 */
+    --primary-color: #D82818;
+    /* 比主题色稍微亮的颜色 */
+    --primary-light-color: #f03028;
+    /* 反白 */
+    --reverse-white: #F0F2F5;
+    /* 亮色 */
+    --light-color: #FFFFFF;
+    /* 灰色 */
+    --grap-color: #F0F0F0;
+    /* 渐变 */
+    --primary-gradient-rt: linear-gradient(to right top, var(--primary-light-color), #ff8d88);
+    /* 渐变 */
+    --primary-gradient-r: linear-gradient(to right, var(--primary-light-color), #ff8d88);
+    /* 卡片的圆角半径 */
+    --card-radius: 24rem;
+    /* 子圆角半径 */
+    --sub-radius: 16rem;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+    /* Chrome Safari */
+    display: none;
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* Firefox */
+    overflow: -moz-scrollbars-none
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden auto;
+    font-size: 32rem;
+    color: var(--primary-title);
+    user-select: none;
+}

@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="header">
+        <i-episode index="{{ classicData.index }}"></i-episode>
+        <view class="like-container">
+            <i-like
+                bind:like="onLike"
+                isLike="{{ likeStatus }}"
+                count="{{ likeCount }}"></i-like>
+            <i-button
+                class="share-btn"
+                open-type="share">
+                <image class="share" src="images/share@icon.png" />
+            </i-button>
+        </view>
+    </view>
+    <i-movie
+        wx:if="{{ classicData.type === 100 }}"
+        class="content"
+        img="{{ classicData.image}}"
+        content="{{ classicData.content}}"></i-movie>
+    <i-music
+        wx:elif="{{ classicData.type === 200 }}"
+        class="content"
+        src="{{ classicData.url }}"
+        img="{{ classicData.image}}"
+        title="{{ classicData.title }}"
+        content="{{ classicData.content}}"></i-music>
+    <i-essay
+        wx:elif="{{ classicData.type === 300 }}"
+        class="content"
+        img="{{ classicData.image}}"
+        content="{{ classicData.content}}"></i-essay>
+</view>
+

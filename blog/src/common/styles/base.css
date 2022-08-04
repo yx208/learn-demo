@@ -1,0 +1,46 @@
+@import url("//at.alicdn.com/t/font_2665581_z9g8rr4goca.css");
+
+@font-face {
+    font-family: 'JetBrains';
+    src: url("../../assets/JetBrainsMono-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains';
+    src: url("../../assets/JetBrainsMono-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains';
+    src: url("../../assets/JetBrainsMono-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --background-color: #FFFFFF;
+    --link-color-light: #1f89ed;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: JetBrains, monospace, FiraCode, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: .6px !important;
+    }
+}

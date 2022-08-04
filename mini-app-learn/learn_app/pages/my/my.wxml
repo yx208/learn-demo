@@ -1,0 +1,32 @@
+<view class="container">
+    <image src="images/my.png" class="bg"></image>
+    <i-button
+        class="avatar-position"
+        wx:if="{{ !authorized }}"
+        open-type="getUserInfo"
+        bind:getuserinfo="onGetUserInfo">
+        <view class="click-me">Click Me</view>
+    </i-button>
+    <view wx:if="{{ authorized }}" class="avatar-container avatar-position">
+        <image src="{{ userInfo.avatarUrl }}" class="avatar" />
+        <text>{{ userInfo.nickName }}</text>
+    </view>
+    <view class="about-container">
+        <view bind:tap="onJumpToAbout" class="about-us">
+            <image src="images/about.png" />
+            <text class="description">关于我们</text>
+        </view>
+        <view class="about-us">
+            <text class="book-num">{{ bookCount }}</text>
+            <text class="description">喜欢的书</text>
+        </view>
+    </view>
+    <view class="like-container">
+        <image class="headline" src="images/like@icon.png" />
+        <view class="preview-container">
+            <block wx:for="{{ classics }}" wx:key="id">
+                <i-preview bind:tapping="onJumpToDetail" class="preview" classic="{{ item }}" />
+            </block>
+        </view>
+    </view>
+</view>

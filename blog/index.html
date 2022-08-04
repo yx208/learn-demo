@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <!-- <link rel="icon" href="/favicon.ico" /> -->
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,
+        width=device-width,initial-scale=1.0" />
+	<title>INMO 的个人站点</title>
+    <script>
+        ;((d) => {
+
+            const html = d.documentElement;
+            const clientWidth = html.getBoundingClientRect().width
+
+            if (clientWidth < 500) {
+                html.style.fontSize = clientWidth / 750 + 'px';
+            }
+
+        })(document);
+    </script>
+</head>
+<body>
+	<div id="app"></div>
+	<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.article {
+    font-size: 32em;
+}
+
+.article * {
+    line-height: 1.6;
+}
+
+.article h1 {
+    margin: 48rem 0;
+    font-size: 48rem;
+}
+
+.article h2 {
+    margin: 40rem 0;
+    font-size: 40rem;
+}
+
+.article h3 {
+    margin: 36rem 0;
+    font-size: 36rem;
+}
+
+.article h4 {
+    margin: 32rem 0;
+    font-size: 32rem;
+}
+
+.article p {
+    margin: 32rem 0;
+    font-size: 32rem;
+    vertical-align: middle;
+}
+
+.article code {
+    font-size: 28rem;
+}
+
+.article a {
+    color: var(--link-color-light);
+}
+
+.article img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.article ol,
+.article ul {
+    margin: 32rem 0;
+    padding-left: 64rem;
+}
+
+.article ol > li,
+.article ul > li {
+    font-size: 28rem;
+    margin: 16rem 0;
+}
+
+.article pre {
+    overflow: scroll hidden;
+    padding: 32rem;
+    background-color: #f8f8f8;
+}
+
+.article pre * {
+    background-color: #f8f8f8;
+}
+
+.article pre > code > span {
+    line-height: 1.2;
+}
+
+.article p > code {
+    position: relative;
+    padding: 0 8rem;
+    font-weight: bold;
+}
+
+.article code {
+    font-family: JetBrains, FiraCode, sans-serif;
+}
+
+.article p > code::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -4rem;
+    background-color: #f0f0f0;
+    z-index: -1;
+}
+
+.article blockquote {
+    border-left: 4px solid #1f89ed;
+    background-color: #f0f0f0;
+    padding: 1px 20px;
+    margin: 22px 0;
+}
