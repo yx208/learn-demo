@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/script/Compiler.js"></script>
+    <script src="./lib/script/Dependence.js"></script>
+    <script src="./lib/script/Watcher.js"></script>
+    <script src="./lib/script/Observer.js"></script>
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model="text">
+        <span>响应数据: </span><span>{{ text }}</span>
+        <p>{{ text }}</p>
+        <div v-html="html"></div>
+    </div>
+
+    <script>
+
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                text: 'hello world',
+                html: '<h1>我是 H1<h1>'
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

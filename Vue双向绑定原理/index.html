@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model="text">
+        <span>响应的数据: </span><span>{{ text }}</span>
+    </div>
+
+    <script src="./script/Depend.js"></script>
+    <script src="./script/Watcher.js"></script>
+    <script src="./script/Compile.js"></script>
+    <script src="./script/Observer.js"></script>
+    <script src="./script/index.js"></script>
+    <script>
+
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                text: 'hello world',
+                list: {
+                    title: "I'm title"
+                }
+            }
+        })
+
+    </script>
+    
+</body>
+</html>
